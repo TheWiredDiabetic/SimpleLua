@@ -1,0 +1,5 @@
+local Player = game:GetService("Players") -- the Players service provided by Roblox
+
+Player.PlayerRemoved:Connect(function(prevPlayer):Connect(function() 
+    print("Player " .. prevPlayer.Name .. " has left the game.") -- you can implement anything here in your code.
+end)
